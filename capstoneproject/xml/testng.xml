@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="NopCommerce Suite">
+
+    <listeners>
+
+        <listener class-name="utilities.ExtentListener"/>
+
+    </listeners>
+
+    <test name="NopCommerce Tests">
+
+        <classes>
+
+            <class name="tests.NopCommerceTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>

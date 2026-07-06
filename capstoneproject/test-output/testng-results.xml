@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-07-06T16:35:30 IST" name="NopCommerce Suite" finished-at="2026-07-06T16:36:48 IST" duration-ms="78667">
+    <groups>
+    </groups>
+    <test started-at="2026-07-06T16:35:30 IST" name="NopCommerce Tests" finished-at="2026-07-06T16:36:48 IST" duration-ms="78667">
+      <class name="tests.NopCommerceTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.NopCommerceTest@4470fbd6]" started-at="2026-07-06T16:35:30 IST" name="setup" finished-at="2026-07-06T16:35:45 IST" duration-ms="14934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerTest()[pri:1, instance:tests.NopCommerceTest@4470fbd6]" started-at="2026-07-06T16:35:45 IST" name="registerTest" finished-at="2026-07-06T16:35:50 IST" duration-ms="5458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method signature="loginTest()[pri:2, instance:tests.NopCommerceTest@4470fbd6]" started-at="2026-07-06T16:35:50 IST" name="loginTest" finished-at="2026-07-06T16:35:55 IST" duration-ms="4682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="searchProductTest()[pri:3, instance:tests.NopCommerceTest@4470fbd6]" started-at="2026-07-06T16:35:55 IST" name="searchProductTest" finished-at="2026-07-06T16:35:59 IST" duration-ms="4212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductTest -->
+        <test-method signature="addToCartTest()[pri:4, instance:tests.NopCommerceTest@4470fbd6]" started-at="2026-07-06T16:35:59 IST" name="addToCartTest" finished-at="2026-07-06T16:36:02 IST" duration-ms="3069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTest -->
+        <test-method signature="wishlistTest()[pri:5, instance:tests.NopCommerceTest@4470fbd6]" started-at="2026-07-06T16:36:02 IST" name="wishlistTest" finished-at="2026-07-06T16:36:02 IST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wishlistTest -->
+        <test-method signature="shoppingCartTest()[pri:6, instance:tests.NopCommerceTest@4470fbd6]" started-at="2026-07-06T16:36:02 IST" name="shoppingCartTest" finished-at="2026-07-06T16:36:48 IST" duration-ms="45671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shoppingCartTest -->
+        <test-method signature="verifyOrderPlacedTest()[pri:7, instance:tests.NopCommerceTest@4470fbd6]" started-at="2026-07-06T16:36:48 IST" name="verifyOrderPlacedTest" finished-at="2026-07-06T16:36:48 IST" depends-on-methods="tests.NopCommerceTest.shoppingCartTest" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrderPlacedTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.NopCommerceTest@4470fbd6]" started-at="2026-07-06T16:36:48 IST" name="tearDown" finished-at="2026-07-06T16:36:48 IST" duration-ms="477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.NopCommerceTest -->
+    </test> <!-- NopCommerce Tests -->
+  </suite> <!-- NopCommerce Suite -->
+</testng-results>
