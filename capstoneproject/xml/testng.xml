@@ -3,10 +3,8 @@
 <suite name="NopCommerce Suite">
 
     <listeners>
-
-        <listener class-name="utilities.ExtentListener"/>
-
-    </listeners>
+    <listener class-name="utilities.ExtentListener"/>
+</listeners>
 
     <test name="NopCommerce Tests">
 

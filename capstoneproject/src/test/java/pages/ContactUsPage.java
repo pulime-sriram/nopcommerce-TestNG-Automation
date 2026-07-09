@@ -1,21 +1,26 @@
 package pages;
 
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
 public class ContactUsPage {
 
     WebDriver driver;
 
-    public ContactUsPage(WebDriver driver){
-        this.driver=driver;
+    public ContactUsPage(WebDriver driver) {
+        this.driver = driver;
     }
 
-    By enquiry=By.id("Enquiry");
-    By submitBtn=By.name("send-email");
+    By enquiry = By.id("Enquiry");
 
-    public void submitEnquiry(String msg){
+    By submitBtn = By.name("send-email");
+
+    public void submitEnquiry(String msg) {
+
+        driver.findElement(enquiry).clear();
 
         driver.findElement(enquiry).sendKeys(msg);
+
         driver.findElement(submitBtn).click();
     }
 }
