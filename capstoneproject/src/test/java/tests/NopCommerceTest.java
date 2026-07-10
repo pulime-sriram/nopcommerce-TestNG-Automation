@@ -37,22 +37,27 @@ public class NopCommerceTest {
     WishlistPage wp;
     CheckoutPage cp;
 
+ // Stores dynamically generated email for registration and login
     String email;
+
+    // Reusable password used across registration and login scenarios
     String password = "Dheeraj123";
 
     @BeforeClass
     public void setup() throws InterruptedException {
 
-        ChromeOptions options = new ChromeOptions();
+    	// Configure Chrome browser options
+    	ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-blink-features=AutomationControlled");
 
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
+     // Global wait for locating web elements
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         driver.get("https://demo.nopcommerce.com");
         Thread.sleep(8000);
-
+     // Initialize all Page Object classes
         hp = new HomePage(driver);
         rp = new RegisterPage(driver);
         lp = new LoginPage(driver);
@@ -63,6 +68,7 @@ public class NopCommerceTest {
         cp = new CheckoutPage(driver);
     }
 
+ // Verify application home page loads successfully
     @Test(priority = 1)
     public void verifyHomePageLoadedTest() {
         ExtentListener.test.info("Verifying Home Page");
@@ -74,15 +80,15 @@ public class NopCommerceTest {
         }
     }
 
-    @Test(priority = 2)
-    public void openRegisterPageTest() {
+ // Navigate to registration page
+    @Test(priority = 2)    public void openRegisterPageTest() {
         ExtentListener.test.info("Opening Register Page");
         hp.clickRegister();
         ExtentListener.test.pass("Register Page Opened");
     }
 
-    @Test(priority = 3)
-    public void invalidRegistrationTest() throws Exception {
+ // Validate mandatory field error messages during registration
+    @Test(priority = 3)    public void invalidRegistrationTest() throws Exception {
         ExtentListener.test.info("Validating Registration Mandatory Fields");
         driver.get("https://demo.nopcommerce.com/register");
         
@@ -102,8 +108,8 @@ public class NopCommerceTest {
         }
     }
 
-    @Test(priority = 4)
-    public void registerTest() throws Exception {
+ // Register new user with unique email
+    @Test(priority = 4)    public void registerTest() throws Exception {
         ExtentListener.test.info("Executing Valid Registration");
         email = "dheeraj" + UUID.randomUUID().toString().substring(0,5) + "@gmail.com";
 
@@ -113,8 +119,9 @@ public class NopCommerceTest {
         ExtentListener.test.pass("Registration Completed");
     }
 
+ // Validate invalid login functionality
     @Test(priority = 5)
-    public void invalidLoginTest() {
+        public void invalidLoginTest() {
         ExtentListener.test.info("Executing Invalid Login Test");
         driver.get("https://demo.nopcommerce.com/login");
 
@@ -132,8 +139,8 @@ public class NopCommerceTest {
         ExtentListener.test.pass("Invalid Login Validation Verified");
     }
 
-    @Test(priority = 6)
-    public void loginTest() throws Exception {
+ // Login using newly registered credentials
+    @Test(priority = 6)    public void loginTest() throws Exception {
         ExtentListener.test.info("Executing Valid Login");
         driver.get("https://demo.nopcommerce.com/login"); // Navigates cleanly to login screen
 
@@ -143,8 +150,8 @@ public class NopCommerceTest {
         ExtentListener.test.pass("Login Completed");
     }
 
-    @Test(priority = 7)
-    public void verifyLoginSuccessTest() {
+ // Verify successful login by checking logout link
+    @Test(priority = 7)    public void verifyLoginSuccessTest() {
         String pageText = driver.getPageSource();
 
         if(pageText.contains("Log out")) {
@@ -153,8 +160,8 @@ public class NopCommerceTest {
             throw new RuntimeException("Login Verification Failed");
         }
     }
-    @Test(priority = 8)
-    public void invalidSearchProductTest() throws Exception {
+ // Validate search functionality using invalid product name
+    @Test(priority = 8)    public void invalidSearchProductTest() throws Exception {
         ExtentListener.test.info("Executing Invalid Product Search");
         sp.searchProduct("XYZ123NonExistent");
         Thread.sleep(2000);
@@ -167,8 +174,8 @@ public class NopCommerceTest {
         }
     }
 
-    @Test(priority = 9)
-    public void searchProductTest() throws Exception {
+ // Search for a valid product
+    @Test(priority = 9)    public void searchProductTest() throws Exception {
         sp.searchProduct("Apple MacBook Pro");
         Thread.sleep(3000);
 
@@ -176,22 +183,23 @@ public class NopCommerceTest {
     }
 
     
+ // Open selected product details page
     @Test(priority = 10)
-    public void openProductDetailsTest() {
+       public void openProductDetailsTest() {
         sp.openFirstProduct();
         ExtentListener.test.pass("Product Details Opened");
     }
 
-    @Test(priority = 11)
-    public void addToCartTest() throws Exception {
+ // Add selected product to shopping cart
+    @Test(priority = 11)    public void addToCartTest() throws Exception {
         pd.addProductToCart();
         Thread.sleep(3000);
 
         ExtentListener.test.pass("Product Added To Cart");
     }
 
-    @Test(priority = 12)
-    public void wishlistTest() {
+ // Add selected product to wishlist
+    @Test(priority = 12)    public void wishlistTest() {
         wp.addWishlist();
         ExtentListener.test.pass("Product Added To Wishlist");
     }
@@ -226,6 +234,8 @@ public class NopCommerceTest {
     @AfterClass
     public void tearDown() {
         if (driver != null) {
+        	// Quit browser session
+        	driver.quit();
             driver.quit();
         }
     }

@@ -2,76 +2,76 @@
 <testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-09T15:38:31 IST" name="NopCommerce Suite" finished-at="2026-07-09T15:39:57 IST" duration-ms="86647">
+  <suite started-at="2026-07-10T11:12:19 IST" name="NopCommerce Suite" finished-at="2026-07-10T11:13:51 IST" duration-ms="91678">
     <groups>
     </groups>
-    <test started-at="2026-07-09T15:38:31 IST" name="NopCommerce Tests" finished-at="2026-07-09T15:39:57 IST" duration-ms="86647">
+    <test started-at="2026-07-10T11:12:19 IST" name="NopCommerce Tests" finished-at="2026-07-10T11:13:51 IST" duration-ms="91678">
       <class name="tests.NopCommerceTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-09T15:38:31 IST" name="setup" finished-at="2026-07-09T15:38:46 IST" duration-ms="14998" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-10T11:12:19 IST" name="setup" finished-at="2026-07-10T11:12:38 IST" duration-ms="18386" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyHomePageLoadedTest()[pri:1, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-09T15:38:46 IST" name="verifyHomePageLoadedTest" finished-at="2026-07-09T15:38:46 IST" duration-ms="81" status="PASS">
+        <test-method signature="verifyHomePageLoadedTest()[pri:1, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-10T11:12:38 IST" name="verifyHomePageLoadedTest" finished-at="2026-07-10T11:12:38 IST" duration-ms="168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageLoadedTest -->
-        <test-method signature="openRegisterPageTest()[pri:2, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-09T15:38:46 IST" name="openRegisterPageTest" finished-at="2026-07-09T15:38:47 IST" duration-ms="792" status="PASS">
+        <test-method signature="openRegisterPageTest()[pri:2, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-10T11:12:38 IST" name="openRegisterPageTest" finished-at="2026-07-10T11:12:39 IST" duration-ms="571" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openRegisterPageTest -->
-        <test-method signature="invalidRegistrationTest()[pri:3, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-09T15:38:47 IST" name="invalidRegistrationTest" finished-at="2026-07-09T15:38:50 IST" duration-ms="3082" status="PASS">
+        <test-method signature="invalidRegistrationTest()[pri:3, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-10T11:12:39 IST" name="invalidRegistrationTest" finished-at="2026-07-10T11:12:42 IST" duration-ms="3734" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidRegistrationTest -->
-        <test-method signature="registerTest()[pri:4, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-09T15:38:50 IST" name="registerTest" finished-at="2026-07-09T15:38:55 IST" duration-ms="4928" status="PASS">
+        <test-method signature="registerTest()[pri:4, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-10T11:12:42 IST" name="registerTest" finished-at="2026-07-10T11:12:47 IST" duration-ms="4985" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method signature="invalidLoginTest()[pri:5, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-09T15:38:55 IST" name="invalidLoginTest" finished-at="2026-07-09T15:38:56 IST" duration-ms="1363" status="PASS">
+        <test-method signature="invalidLoginTest()[pri:5, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-10T11:12:47 IST" name="invalidLoginTest" finished-at="2026-07-10T11:12:48 IST" duration-ms="1142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginTest -->
-        <test-method signature="loginTest()[pri:6, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-09T15:38:56 IST" name="loginTest" finished-at="2026-07-09T15:39:01 IST" duration-ms="4596" status="PASS">
+        <test-method signature="loginTest()[pri:6, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-10T11:12:48 IST" name="loginTest" finished-at="2026-07-10T11:12:52 IST" duration-ms="3633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="verifyLoginSuccessTest()[pri:7, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-09T15:39:01 IST" name="verifyLoginSuccessTest" finished-at="2026-07-09T15:39:01 IST" duration-ms="15" status="PASS">
+        <test-method signature="verifyLoginSuccessTest()[pri:7, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-10T11:12:52 IST" name="verifyLoginSuccessTest" finished-at="2026-07-10T11:12:52 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginSuccessTest -->
-        <test-method signature="invalidSearchProductTest()[pri:8, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-09T15:39:01 IST" name="invalidSearchProductTest" finished-at="2026-07-09T15:39:03 IST" duration-ms="2571" status="PASS">
+        <test-method signature="invalidSearchProductTest()[pri:8, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-10T11:12:52 IST" name="invalidSearchProductTest" finished-at="2026-07-10T11:12:55 IST" duration-ms="2933" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidSearchProductTest -->
-        <test-method signature="searchProductTest()[pri:9, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-09T15:39:03 IST" name="searchProductTest" finished-at="2026-07-09T15:39:07 IST" duration-ms="3650" status="PASS">
+        <test-method signature="searchProductTest()[pri:9, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-10T11:12:55 IST" name="searchProductTest" finished-at="2026-07-10T11:12:59 IST" duration-ms="3905" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchProductTest -->
-        <test-method signature="openProductDetailsTest()[pri:10, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-09T15:39:07 IST" name="openProductDetailsTest" finished-at="2026-07-09T15:39:08 IST" duration-ms="651" status="PASS">
+        <test-method signature="openProductDetailsTest()[pri:10, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-10T11:12:59 IST" name="openProductDetailsTest" finished-at="2026-07-10T11:13:00 IST" duration-ms="691" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openProductDetailsTest -->
-        <test-method signature="addToCartTest()[pri:11, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-09T15:39:08 IST" name="addToCartTest" finished-at="2026-07-09T15:39:11 IST" duration-ms="3100" status="PASS">
+        <test-method signature="addToCartTest()[pri:11, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-10T11:13:00 IST" name="addToCartTest" finished-at="2026-07-10T11:13:03 IST" duration-ms="3065" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCartTest -->
-        <test-method signature="wishlistTest()[pri:12, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-09T15:39:11 IST" name="wishlistTest" finished-at="2026-07-09T15:39:11 IST" duration-ms="43" status="PASS">
+        <test-method signature="wishlistTest()[pri:12, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-10T11:13:03 IST" name="wishlistTest" finished-at="2026-07-10T11:13:03 IST" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wishlistTest -->
-        <test-method signature="openShoppingCartTest()[pri:13, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-09T15:39:11 IST" name="openShoppingCartTest" finished-at="2026-07-09T15:39:14 IST" duration-ms="3662" status="PASS">
+        <test-method signature="openShoppingCartTest()[pri:13, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-10T11:13:03 IST" name="openShoppingCartTest" finished-at="2026-07-10T11:13:07 IST" duration-ms="4198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openShoppingCartTest -->
-        <test-method signature="checkoutTest()[pri:14, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-09T15:39:14 IST" name="checkoutTest" finished-at="2026-07-09T15:39:57 IST" duration-ms="42246" status="PASS">
+        <test-method signature="checkoutTest()[pri:14, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-10T11:13:07 IST" name="checkoutTest" finished-at="2026-07-10T11:13:50 IST" duration-ms="43337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkoutTest -->
-        <test-method signature="verifyOrderPlacedTest()[pri:15, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-09T15:39:57 IST" name="verifyOrderPlacedTest" finished-at="2026-07-09T15:39:57 IST" depends-on-methods="tests.NopCommerceTest.checkoutTest" duration-ms="15" status="PASS">
+        <test-method signature="verifyOrderPlacedTest()[pri:15, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-10T11:13:50 IST" name="verifyOrderPlacedTest" finished-at="2026-07-10T11:13:50 IST" depends-on-methods="tests.NopCommerceTest.checkoutTest" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrderPlacedTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-09T15:39:57 IST" name="tearDown" finished-at="2026-07-09T15:39:57 IST" duration-ms="532" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.NopCommerceTest@5dd1c9f2]" started-at="2026-07-10T11:13:50 IST" name="tearDown" finished-at="2026-07-10T11:13:51 IST" duration-ms="420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
